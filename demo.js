@@ -4,6 +4,9 @@ let index = 0;
 
 function newApiForLoad() {
   // new api for lazy load
+  if (!IntersectionObserver) {
+    console.log('api is not support');return;
+  }
   var observer = new IntersectionObserver(
     changes => {
       changes.forEach(function (change) {
@@ -61,12 +64,9 @@ function jqForLoad(param) {
 }
 
 function lazyloadAllimg(param) {
-  if (!IntersectionObserver) {
     oldWayForLoad();
     jqForLoad();
-  } else {
     newApiForLoad();
-  }
 }
 
 function scrollDemo() {
