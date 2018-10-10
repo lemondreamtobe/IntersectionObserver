@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="demo.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.js"></script>
+</head>
+
+<body>
+  <div class="h1">示例demo</div>
+  <div class="father">
+    <div class="son">
+      <div id="demo">
+        滚动我试试看
+      </div>
+    </div>
+  </div>
+  <div id="info"></div>
+  <div class="h1">懒加载应用：新api</div>
+  <div class="lz-content1">
+    <div class="img-fa">
+      <img data-src='http://www.pptbz.com/d/file/p/201708/2596b4757c318c297fbb4c56e303c2bf.jpg' src="">
+    </div>
+    <div class="img-fa">
+        <img data-src='http://58pic.ooopic.com/58pic/12/88/00/78w58PICykY.jpg' src="">
+    </div>
+    <div class="img-fa">
+        <img data-src='http://h.hiphotos.baidu.com/zhidao/pic/item/0df431adcbef7609441ec8d82fdda3cc7cd99e5b.jpg' src="">
+    </div>
+    <div class="img-fa">
+        <img data-src='http://g.hiphotos.baidu.com/zhidao/pic/item/024f78f0f736afc3df9f4547b019ebc4b7451204.jpg' src="">
+    </div>
+  </div>
+  <div class="h1">懒加载应用：旧方法api</div>
+  <div class="lz-content2">
+    <div class="img-fa">
+      <img data-src='http://www.pptbz.com/d/file/p/201708/2596b4757c318c297fbb4c56e303c2bf.jpg' src="">
+    </div>
+    <div class="img-fa">
+        <img data-src='http://58pic.ooopic.com/58pic/12/88/00/78w58PICykY.jpg' src="">
+    </div>
+    <div class="img-fa">
+        <img data-src='http://h.hiphotos.baidu.com/zhidao/pic/item/0df431adcbef7609441ec8d82fdda3cc7cd99e5b.jpg' src="">
+    </div>
+    <div class="img-fa">
+        <img data-src='http://g.hiphotos.baidu.com/zhidao/pic/item/024f78f0f736afc3df9f4547b019ebc4b7451204.jpg' src="">
+    </div>
+  </div>
+  <div class="h1">懒加载应用：jq插件</div>
+  <div class="lz-content3">
+    <div class="img-fa">
+      <img data-original='http://www.pptbz.com/d/file/p/201708/2596b4757c318c297fbb4c56e303c2bf.jpg' src="">
+    </div>
+    <div class="img-fa">
+        <img data-original='http://58pic.ooopic.com/58pic/12/88/00/78w58PICykY.jpg' src="">
+    </div>
+    <div class="img-fa">
+        <img data-original='http://h.hiphotos.baidu.com/zhidao/pic/item/0df431adcbef7609441ec8d82fdda3cc7cd99e5b.jpg' src="">
+    </div>
+    <div class="img-fa">
+        <img data-original='http://g.hiphotos.baidu.com/zhidao/pic/item/024f78f0f736afc3df9f4547b019ebc4b7451204.jpg' src="">
+    </div>
+  </div>
+</body>
+<script src="lazyload.js"></script>
+<script src="demo.js"></script>
+</html>

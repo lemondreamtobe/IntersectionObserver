@@ -1,0 +1,50 @@
+body,html{
+  min-width: 960px;
+}
+.father {
+  height: 200px;
+  overflow: auto;
+  /* padding: 10px; */
+}
+
+.son {
+  height: 700px;
+}
+
+#demo {
+  width: 100px;
+  height: 100px;
+  background: red;
+  color: black;
+  margin: auto;
+  line-height: 100px;
+  text-align: center;
+}
+
+#info {
+  line-height: 40px;
+  background: red;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+
+img {
+  display: inline-block;
+  height: 100%;
+}
+
+img::after {
+  display: block;
+}
+
+.img-fa {
+  height: 540px;
+  background: grey;
+}
+.h1{
+  color: #0078d7;
+  font-size: 23px;
+  font-weight: bold;
+  margin: 10px;
+}
